@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prepare for your consult — Summit</title>
+  <style>
+    :root {
+      --paper: #F2F5F8;
+      --ink: #1A2430;
+      --ink-soft: #526070;
+      --line: #D4DCE6;
+      --accent: #2B5C8A;
+      --accent-ink: #F5F9FD;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 system-ui, sans-serif; }
+    header { padding: 1.5rem 1.25rem; }
+    .logo { font: 700 1.5rem Georgia, serif; text-decoration: none; }
+    main { padding-block: 3rem; }
+    .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+    h1 { font: 700 clamp(2rem, 5vw, 3.25rem)/1.1 Georgia, serif; margin-bottom: 1.5rem; }
+    /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+    h1 { background: linear-gradient(90deg, #2B5C8A, #6A3FB5); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+    .flush { padding: 0; margin: 0 0 2rem; max-width: none; }
+    /* Intentional, for Impeccable's test drive: low-contrast text, light grey on paper. */
+    .hint { color: #C9C9C9; margin-bottom: 2rem; }
+    .list { display: grid; gap: 0.75rem; margin-bottom: 2rem; padding: 0; list-style: none; }
+    .list li { background: #FAFBFD; border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; }
+    .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 0.85rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none; }
+    /* Intentional, for Impeccable's test drive: transition on a layout property. */
+    .bar { height: 6px; width: 40%; background: var(--accent); transition: width 0.3s; margin-bottom: 2rem; }
+    .bar:hover { width: 100%; }
+    /* Intentional, for Impeccable's test drive: hard-coded colour that is not in DESIGN.md's palette. */
+    .note { border-left: 4px solid #2E7D6B; padding-left: 1rem; margin-bottom: 2rem; }
+    /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+    .small-link { font-size: 10px; }
+  </style>
+</head>
+<body>
+  <header><a class="logo" href="../">Summit</a></header>
+  <main>
+    <div class="wrap">
+      <h1>Get ready for your consult</h1>
+      <p class="hint">Three quick things to have on hand before your 45-minute call with a senior HR consultant.</p>
+      <div class="bar" aria-hidden="true"></div>
+      <ul class="list">
+        <li>Where your team members are located and how they are classified.</li>
+        <li>A short timeline of what has happened so far.</li>
+        <li>The decision you want to leave the call able to make.</li>
+      </ul>
+      <p class="note">Nothing you share here is stored: this checklist is a page to read, not a form.</p>
+    </div>
+    <p class="flush">Bring any documents you already have, such as employment contracts, a remote work policy or notes from earlier conversations, and we will go through them together.</p>
+    <div class="wrap">
+      <a class="btn" href="mailto:hello@summit.example">Book a consult</a>
+      <p><a class="small-link" href="../">Back to the home page</a></p>
+    </div>
+  </main>
+</body>
+</html>

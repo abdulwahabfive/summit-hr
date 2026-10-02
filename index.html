@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summit — HR support for distributed teams</title>
+  <meta name="description" content="Book a senior HR consultant for clear guidance on remote hiring, async culture, cross-border compliance and team cohesion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F2F5F8;
+      --card: #FAFBFD;
+      --ink: #1A2430;
+      --ink-soft: #526070;
+      --line: #D4DCE6;
+      --accent: #2B5C8A;
+      --accent-hover: #234C73;
+      --accent-ink: #F5F9FD;
+      --serif: "Libre Baskerville", Georgia, serif;
+      --sans: "Work Sans", system-ui, sans-serif;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --container: 64rem;
+      --gutter: 1.25rem;
+      --section-y: 6rem;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); }
+    a { color: inherit; }
+    .wrap { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
+
+    header .wrap { display: flex; justify-content: space-between; align-items: center; padding-block: 1.5rem; }
+    .logo { font: 700 1.5rem var(--serif); text-decoration: none; }
+    .nav-link { font-weight: 500; text-underline-offset: 4px; }
+
+    .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 0.85rem 1.4rem; border-radius: var(--radius-sm); font-weight: 600; text-decoration: none; }
+    .btn:hover { background: var(--accent-hover); }
+    .btn-quiet { font-weight: 500; text-underline-offset: 4px; }
+
+    .hero { padding-block: 5rem var(--section-y); }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2.5rem, 6vw, 4.25rem); max-width: 16ch; margin: 1rem 0 1.5rem; }
+    .hero p { color: var(--ink-soft); font-size: 1.25rem; max-width: 36rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 2.25rem; }
+
+    section { padding-block: var(--section-y); border-top: 1px solid var(--line); }
+    h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); max-width: 22ch; margin-bottom: 2.5rem; }
+
+    .topics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .topic { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem; }
+    .topic h3 { font-size: 1.375rem; margin-bottom: 0.5rem; }
+    .topic p { color: var(--ink-soft); }
+
+    .steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; counter-reset: step; }
+    .steps li { counter-increment: step; }
+    .steps li::before { content: counter(step, decimal-leading-zero); display: block; font: 400 2.5rem var(--serif); color: var(--accent); margin-bottom: 0.75rem; }
+    .steps h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .steps p { color: var(--ink-soft); }
+
+    .closing { text-align: center; }
+    .closing h2 { margin: 0 auto 1rem; }
+    .closing p { color: var(--ink-soft); margin-bottom: 2rem; }
+
+    footer { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--ink-soft); font-size: 0.9375rem; }
+
+    @media (max-width: 720px) {
+      :root { --section-y: 4rem; }
+      .topics, .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#">Summit</a>
+      <a class="nav-link" href="impeccable-test-drive/">Prepare for a consult</a>
+      <a class="nav-link" href="#book">Book a consult</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero wrap">
+      <p class="eyebrow">HR support for remote-first teams</p>
+      <h1>People practices that work across time zones.</h1>
+      <p>Talk to a senior HR consultant this week about remote hiring, async culture, cross-border compliance or keeping a distributed team aligned.</p>
+      <div class="actions">
+        <a class="btn" href="#book">Book a 45-minute consult</a>
+        <a class="btn-quiet" href="#how">See how it works</a>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <h2>What remote leaders bring to a consult</h2>
+        <div class="topics">
+          <div class="topic"><h3>Remote hiring</h3><p>Job posts, async interviews, offer letters and onboarding when you never meet in person.</p></div>
+          <div class="topic"><h3>Async culture</h3><p>Documentation norms, meeting defaults and feedback rhythms that work without an office.</p></div>
+          <div class="topic"><h3>Cross-border basics</h3><p>Contractor vs employee, local requirements and the records you need across jurisdictions.</p></div>
+          <div class="topic"><h3>Team cohesion</h3><p>Performance expectations, conflict resolution and exits when your team is spread out.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><h3>Describe your setup</h3><p>A short form: where your team is, what's happening and what you need to decide.</p></li>
+          <li><h3>Talk it through</h3><p>A 45-minute video call with a senior consultant experienced in distributed teams.</p></li>
+          <li><h3>Get it documented</h3><p>A written summary with next steps and templates, in your inbox within a day.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="book" class="closing">
+      <div class="wrap">
+        <h2>Running a remote team and need a second opinion?</h2>
+        <p>Book a consult and talk to someone who has built people practices without an office.</p>
+        <a class="btn" href="mailto:hello@summit.example">Book a consult</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Summit. HR support for distributed teams.</div>
+  </footer>
+</body>
+</html>
